@@ -5,7 +5,7 @@ from fractions import Fraction
 
 getcontext().prec = 100
 app = Flask(__name__)
-
+# שינוי קטן
 def base_conversion(year):
     res = Fraction(year)
     num_digits = 1
