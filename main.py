@@ -30,6 +30,8 @@ def get_clock_data():
     seconds_since_big_bang = Decimal('466576408532613321.5304043206646')
     reference_time = datetime.datetime(2020, 12, 31, 23, 59, 59)
     input_time = datetime.datetime.now()
+    print("SERVER TIME:", input_time)
+
     second_multiplier = Decimal(285738202.060366731702559) / Decimal(299792458)
 
     difference_in_seconds = (input_time - reference_time).total_seconds()
