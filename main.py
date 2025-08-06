@@ -5,7 +5,7 @@ from fractions import Fraction
 
 getcontext().prec = 100
 app = Flask(__name__)
-# שינוי קטן
+
 def base_conversion(year):
     res = Fraction(year)
     num_digits = 1
@@ -31,7 +31,6 @@ def get_clock_data():
     reference_time = datetime.datetime(2020, 12, 31, 23, 59, 59)
     input_time = datetime.datetime.now()
     print("SERVER TIME:", input_time)
-
     second_multiplier = Decimal(285738202.060366731702559) / Decimal(299792458)
 
     difference_in_seconds = (input_time - reference_time).total_seconds()
